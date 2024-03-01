@@ -7,6 +7,7 @@ export const RESUME_DATA = {
   locationLink: "https://www.google.com/maps/place/%E5%8F%B0%E5%8C%97%E5%B8%82",
   about:
     "Focused on creating user-friendly development and products, building teams based on mutual trust. Proficient in React.js and Next.js.",
+  summary: "",
   personalWebsiteUrl: "https://github.com/oneraner",
   contact: {
     email: "oneraner@gmail.com",
