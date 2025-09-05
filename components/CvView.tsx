@@ -31,17 +31,32 @@ type CVProps = {
 };
 
 function highlightText(text: string) {
-  const parts = text.split(/(\*\*.*?\*\*)/g);
-  return parts.map((part) => {
-    if (part.startsWith("**") && part.endsWith("**")) {
-      return (
-        <span key={part} className="font-bold text-black">
-          {part.slice(2, -2)}
-        </span>
-      );
+  const regex = /\*\*(.*?)\*\*/g;
+  const parts: React.ReactNode[] = [];
+  let lastIndex = 0;
+
+  for (const match of text.matchAll(regex)) {
+    const [fullMatch, inner] = match;
+    const start = match.index ?? 0;
+
+    if (lastIndex < start) {
+      parts.push(<span key={lastIndex}>{text.slice(lastIndex, start)}</span>);
     }
-    return <span key={part}>{part}</span>;
-  });
+
+    parts.push(
+      <span key={start} className="font-bold text-black">
+        {inner}
+      </span>
+    );
+
+    lastIndex = start + fullMatch.length;
+  }
+
+  if (lastIndex < text.length) {
+    parts.push(<span key={lastIndex}>{text.slice(lastIndex)}</span>);
+  }
+
+  return parts;
 }
 
 export function CVView({ title, summary, sections, skills }: CVProps) {
@@ -113,7 +128,7 @@ export function CVView({ title, summary, sections, skills }: CVProps) {
 
                 if ("role" in item && "company" in item) {
                   return (
-                    <li key={item.role} className="space-y-1">
+                    <li key={item.company} className="space-y-1">
                       <div className="font-medium text-black">
                         {item.role} @ {item.company}{" "}
                         <span className="text-sm text-gray-500">
@@ -121,7 +136,7 @@ export function CVView({ title, summary, sections, skills }: CVProps) {
                         </span>
                       </div>
                       {item.details && (
-                        <ul className="list-disc pl-5 text-gray-700 text-sm">
+                        <ul className="list-[circle] pl-5 text-gray-700 text-sm">
                           {item.details.map((d) => (
                             <li key={d} className="leading-relaxed">
                               {highlightText(d)}
@@ -143,7 +158,7 @@ export function CVView({ title, summary, sections, skills }: CVProps) {
                         </span>
                       </div>
                       {item.details && (
-                        <ul className="list-disc pl-5 text-gray-700 text-sm">
+                        <ul className="list-[square] pl-5 text-gray-700 text-sm">
                           {item.details.map((d) => (
                             <li key={d}>{d}</li>
                           ))}
