@@ -1,36 +1,71 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 📄 Personal CV Repository
 
-## Getting Started
+This repository hosts my **personal CVs**, built with **Next.js + TailwindCSS + TypeScript**.  
+The goal is to provide a **one-page, printable, and maintainable CV platform** that reflects both professional experience and technical craftsmanship.
 
-First, run the development server:
+---
+
+## 🚀 Quick Access
+
+View the CVs directly from the source:
+
+- [Frontend CV](./cv/frontend) – Focused on **React, Next.js, frontend architecture, and UI/UX performance**  
+- [Fullstack CV](./cv/fullstack) – Extended with **Node.js, PostgreSQL, AWS, and backend experience**  
+
+---
+
+## 📂 Repository Structure
+
+cv-repo/
+├── cv/
+│ ├── frontend/ # Frontend-focused CV
+│ ├── fullstack/ # Fullstack-focused CV
+│ └── components/ # Shared React components
+├── public/ # Assets (fonts, images)
+├── package.json
+└── README.md
+
+
+---
+
+## ✨ Features
+
+- **Printable First** → Optimized layout that fits on one page for recruiters.  
+- **Customizable Sections** → Modularized CV content (`summary`, `skills`, `work experience`, `education`).  
+- **Highlighting** → Achievements emphasized with `**bold markers**` (e.g., **500%** speedup).  
+- **Theming** → Controlled via TailwindCSS utility classes.  
+- **Reusable Components** → Built with React for easy section updates.  
+
+---
+
+## 🛠️ Getting Started
+
+Clone and install dependencies:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/oneraner/cv.git
+cd cv-repo
+pnpm i
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Run in development:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+pnpm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Build for production:
 
-## Learn More
+```bash
+pnpm run build
+```
 
-To learn more about Next.js, take a look at the following resources:
+📬 Contact
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Email: oneraner@gmail.com
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+GitHub: oneraner
 
-## Deploy on Vercel
+LinkedIn: jeffchao0823
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This repository not only provides my CVs, but also demonstrates a developer-friendly documentation style and the ability to design maintainable, production-ready web projects.
