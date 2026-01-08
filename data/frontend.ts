@@ -61,6 +61,11 @@ export const frontend = {
       heading: "Side Projects",
       items: [
         {
+          name: "AI Chat",
+          description: "A full-stack AI chat application designed to provide interactive and intelligent conversational experiences.",
+          url: "https://github.com/oneraner/aiApp",
+        },
+        {
           name: "Personal CV Repository",
           description:
             "Built a CV platform with Next.js, TailwindCSS, and TypeScript. Features include printable CVs, theme customization, and modular components.",
