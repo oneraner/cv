@@ -1,5 +1,5 @@
 export const fullstackZh = {
-  title: "Chih Yuan Chao - 全端工程師",
+  title: "趙知遠 - 全端工程師",
   summary:
     "橫跨行動與網頁的全端工程師，使用 React Native、React、Node.js 與 Golang 開發產品。我把程式碼視為工具，真正的價值在於理解商業邏輯並將其轉化為端到端的產品決策。具備 AI 功能開發、可擴充後端設計與小型團隊帶領經驗。",
   skills: [

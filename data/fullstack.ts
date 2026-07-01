@@ -1,5 +1,5 @@
 export const fullstack = {
-  title: "Chih Yuan Chao - Full Stack Engineer",
+  title: "Chih-Yuan Chao - Full Stack Engineer",
   summary:
     "Full Stack Engineer who ships across mobile and web with React Native, React, Node.js, and Golang. I treat code as a tool—the real value is understanding the business logic and translating it into product decisions end to end. Experienced in building AI-driven features, scalable backends, and leading small teams.",
   skills: [
