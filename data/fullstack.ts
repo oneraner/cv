@@ -1,12 +1,14 @@
 export const fullstack = {
-  title: "Chih Yuan Chao (Jeff) - Full Stack Engineer",
+  title: "Chih Yuan Chao - Full Stack Engineer",
   summary:
-    "Full Stack Engineer with experience in React, Next.js, Node.js, PostgreSQL, and AWS. Skilled at bridging business needs with technical solutions and building scalable fullstack applications.",
+    "Full Stack Engineer who ships across mobile and web with React Native, React, Node.js, and Golang. I treat code as a tool—the real value is understanding the business logic and translating it into product decisions end to end. Experienced in building AI-driven features, scalable backends, and leading small teams.",
   skills: [
     "JavaScript",
     "TypeScript",
     "React / Next.js",
+    "React Native",
     "Node.js",
+    "Go (Golang)",
     "Express",
     "Prisma",
     "RESTful API",
@@ -15,8 +17,7 @@ export const fullstack = {
     "AWS (EC2, RDS, S3)",
     "TailwindCSS",
     "Docker",
-    "Jest",
-    "Cypress",
+    "AI / LLM Integration",
     "CI/CD",
     "Git",
   ],
@@ -25,9 +26,20 @@ export const fullstack = {
       heading: "Work Experience",
       items: [
         {
+          role: "Software Engineer",
+          company: "Ready Health (瑞迪健康)",
+          period: "Mar 2026 – Present",
+          details: [
+            "Built a health-management mobile app (**React Native**) and marketing website (**React**), plus an internal **CMS**, as a full stack engineer.",
+            "Developed **AI**-powered analysis of health-checkup reports and an appointment-booking system with a **Golang** backend.",
+            "Interviewed candidates and led a mid-level frontend engineer.",
+            "Owned features end to end—turning business requirements into product and data-model decisions, not just implementing specs.",
+          ],
+        },
+        {
           role: "React Developer",
           company: "FPT Taiwan Ltd",
-          period: "Nov 2024 – Present",
+          period: "Nov 2024 – Mar 2026",
           details: [
             "Led a team of **3** frontend engineers to deliver production-ready projects.",
             "Increased development and build speed by **500%** via workflow optimization.",
