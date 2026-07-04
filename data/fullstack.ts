@@ -71,7 +71,24 @@ export const fullstack = {
         },
       ],
     },
-    // Side Projects 暫時隱藏
+    {
+      heading: "Side Projects",
+      items: [
+        {
+          name: "Onchain Lens — blockchain explorer, Go indexer & wallet lab",
+          url: "https://github.com/oneraner/onchain-lens",
+          description:
+            "Full-stack onchain data platform: Next.js/wagmi/viem frontend, Go + PostgreSQL event indexer, Foundry escrow contract. Built to production patterns used by wallets and exchanges.",
+          details: [
+            "Built a **Go** indexer ingesting ERC-20 Transfer/Approval event logs into **PostgreSQL** — raw JSON-RPC client (no SDK), idempotent writes keyed by (txHash, logIndex), **28k+ events** indexed in the first backfill test.",
+            "Implemented **chain-reorg handling**: confirmation-lag indexing, block-hash chain verification, automatic fork-point rollback — verified by fault injection.",
+            "Shipped an approval-risk scanner (unlimited-allowance detection, live on-chain re-reads, one-click revoke) and address explorer decoding event logs from raw topics.",
+            "Built an HD-wallet lab: **BIP-39/44** derivation (validated against known test vectors), local **EIP-1559** signing and raw-tx broadcast, same-nonce **speed-up/cancel** replacement.",
+            "Wrote and fuzz-tested an escrow contract with **Foundry** (incl. reentrancy attack test); all frontend writes are **simulation-gated** with decoded custom-error reasons.",
+          ],
+        },
+      ],
+    },
     {
       heading: "Education",
       items: [

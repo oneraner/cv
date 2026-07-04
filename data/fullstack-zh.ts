@@ -72,6 +72,24 @@ export const fullstackZh = {
       ],
     },
     {
+      heading: "Side Projects",
+      items: [
+        {
+          name: "Onchain Lens — 區塊鏈瀏覽器、Go indexer 與錢包實驗室",
+          url: "https://github.com/oneraner/onchain-lens",
+          description:
+            "全端鏈上資料平台：Next.js/wagmi/viem 前端、Go + PostgreSQL 事件索引器、Foundry escrow 合約，對齊錢包與交易所的生產架構模式。",
+          details: [
+            "以 **Go** 打造 ERC-20 Transfer/Approval 事件索引器寫入 **PostgreSQL**——原生 JSON-RPC client（不依賴 SDK）、以 (txHash, logIndex) 為鍵的冪等寫入，首次 backfill 測試索引 **2.8 萬+ 筆事件**。",
+            "實作 **chain reorg 處理**：確認數落後索引、block hash chain 驗證、自動回滾至分叉點，並以故障注入實測驗證。",
+            "開發 approval 風險掃描器（unlimited allowance 偵測、鏈上即時重讀、一鍵 revoke）與從原始 topics 解碼事件的地址瀏覽器。",
+            "打造 HD 錢包實驗室：**BIP-39/44** 推導（對齊已知測試向量驗證）、本地 **EIP-1559** 簽名與 raw tx 廣播、同 nonce **加速/取消** 替換。",
+            "以 **Foundry** 撰寫並 fuzz 測試 escrow 合約（含重入攻擊測試）；前端所有寫入皆**先模擬後送出**，revert 解碼為可讀原因。",
+          ],
+        },
+      ],
+    },
+    {
       heading: "學歷",
       items: [
         {

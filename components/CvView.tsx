@@ -9,6 +9,7 @@ type Project = {
   name: string;
   description: string;
   url?: string;
+  details?: string[];
 };
 
 type EducationItem = {
@@ -186,6 +187,15 @@ export function CVView({ title, summary, sections, skills }: CVProps) {
                       <div className="text-gray-700 text-sm">
                         {item.description}
                       </div>
+                      {item.details && (
+                        <ul className="list-[circle] pl-5 text-gray-700 text-sm">
+                          {item.details.map((d) => (
+                            <li key={d} className="leading-relaxed">
+                              {highlightText(d)}
+                            </li>
+                          ))}
+                        </ul>
+                      )}
                     </li>
                   );
                 }
