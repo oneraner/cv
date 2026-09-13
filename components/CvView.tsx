@@ -47,7 +47,7 @@ function highlightText(text: string) {
     parts.push(
       <span key={start} className="font-bold text-black">
         {inner}
-      </span>
+      </span>,
     );
 
     lastIndex = start + fullMatch.length;
