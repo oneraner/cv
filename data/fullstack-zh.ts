@@ -30,10 +30,10 @@ export const fullstackZh = {
           company: "瑞迪健康",
           period: "2026 年 3 月 – 至今",
           details: [
-            "以全端角色開發健康管理 App（**React Native**）、行銷網頁（**React**）及後台 **CMS**。",
-            "使用 **Golang** 後端開發 **AI** 分析健檢報告與線上預約功能。",
-            "負責面試並帶領一位中階前端工程師。",
-            "從商業需求出發，主導橫跨前後端的產品與資料模型決策，而非僅實作規格。",
+            "以 **React Native** 主導 AI 健康 App **Ready1**，**6 個月內**從 0 到上架 App Store，涵蓋 AI 功能、**Go** 金流後端（**國泰世華**、**綠界**）與 **15 次以上**送審。",
+            "重構第三方語音合成，由單次阻塞請求改為**分段串流合成與播放**，首次發聲時間自 **10 秒降至 2 秒（−80%）**。",
+            "以 **Go** 建置 **AI** 健檢報告分析流程（上傳 → **OCR** → **LLM** 擷取）；將圖片壓縮移至前端，解決後端 **OOM** 與上傳失敗問題。",
+            "設計團隊標準前端面試流程，執行約 **10 場**面談，並帶領 **1 位**中階工程師至能獨立穩定交付。",
           ],
         },
         {
@@ -72,29 +72,11 @@ export const fullstackZh = {
       ],
     },
     {
-      heading: "Side Projects",
-      items: [
-        {
-          name: "Onchain Lens — 區塊鏈瀏覽器、Go indexer 與錢包實驗室",
-          url: "https://github.com/oneraner/onchain-lens",
-          description:
-            "全端鏈上資料平台：Next.js/wagmi/viem 前端、Go + PostgreSQL 事件索引器、Foundry escrow 合約，對齊錢包與交易所的生產架構模式。",
-          details: [
-            "以 **Go** 打造 ERC-20 Transfer/Approval 事件索引器寫入 **PostgreSQL**——原生 JSON-RPC client（不依賴 SDK）、以 (txHash, logIndex) 為鍵的冪等寫入，首次 backfill 測試索引 **2.8 萬+ 筆事件**。",
-            "實作 **chain reorg 處理**：確認數落後索引、block hash chain 驗證、自動回滾至分叉點，並以故障注入實測驗證。",
-            "開發 approval 風險掃描器（unlimited allowance 偵測、鏈上即時重讀、一鍵 revoke）與從原始 topics 解碼事件的地址瀏覽器。",
-            "打造 HD 錢包實驗室：**BIP-39/44** 推導（對齊已知測試向量驗證）、本地 **EIP-1559** 簽名與 raw tx 廣播、同 nonce **加速/取消** 替換。",
-            "以 **Foundry** 撰寫並 fuzz 測試 escrow 合約（含重入攻擊測試）；前端所有寫入皆**先模擬後送出**，revert 解碼為可讀原因。",
-          ],
-        },
-      ],
-    },
-    {
       heading: "學歷",
       items: [
         {
           school: "佛光大學",
-          degree: "經濟學碩士",
+          degree: "經濟學碩士（五年一貫學士碩士學程）",
           period: "2011 年 9 月 – 2012 年 6 月",
         },
       ],

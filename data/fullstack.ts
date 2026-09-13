@@ -30,10 +30,10 @@ export const fullstack = {
           company: "Ready Health (瑞迪健康)",
           period: "Mar 2026 – Present",
           details: [
-            "Built a health-management mobile app (**React Native**) and marketing website (**React**), plus an internal **CMS**, as a full stack engineer.",
-            "Developed **AI**-powered analysis of health-checkup reports and an appointment-booking system with a **Golang** backend.",
-            "Interviewed candidates and led a mid-level frontend engineer.",
-            "Owned features end to end—turning business requirements into product and data-model decisions, not just implementing specs.",
+            "Took **Ready1** from zero to App Store release in **6 months** as sole owner of the **React Native** architecture — AI features, a **Go** payment backend (**Cathay United Bank**, **ECPay**), **15+** store review cycles.",
+            "Rearchitected third-party speech synthesis from a blocking request into **chunked streaming synthesis and playback**, cutting time-to-first-audio from **10s to 2s (−80%)**.",
+            "Built the **AI** health-report pipeline on a **Go** backend (upload → **OCR** → **LLM** extraction); fixed a backend **OOM** by moving image compression client-side, ending upload failures.",
+            "Designed the team's standard frontend interview process, ran **~10** candidate screens, and mentored **1** mid-level engineer to independent feature delivery.",
           ],
         },
         {
@@ -72,29 +72,11 @@ export const fullstack = {
       ],
     },
     {
-      heading: "Side Projects",
-      items: [
-        {
-          name: "Onchain Lens — blockchain explorer, Go indexer & wallet lab",
-          url: "https://github.com/oneraner/onchain-lens",
-          description:
-            "Full-stack onchain data platform: Next.js/wagmi/viem frontend, Go + PostgreSQL event indexer, Foundry escrow contract. Built to production patterns used by wallets and exchanges.",
-          details: [
-            "Built a **Go** indexer ingesting ERC-20 Transfer/Approval event logs into **PostgreSQL** — raw JSON-RPC client (no SDK), idempotent writes keyed by (txHash, logIndex), **28k+ events** indexed in the first backfill test.",
-            "Implemented **chain-reorg handling**: confirmation-lag indexing, block-hash chain verification, automatic fork-point rollback — verified by fault injection.",
-            "Shipped an approval-risk scanner (unlimited-allowance detection, live on-chain re-reads, one-click revoke) and address explorer decoding event logs from raw topics.",
-            "Built an HD-wallet lab: **BIP-39/44** derivation (validated against known test vectors), local **EIP-1559** signing and raw-tx broadcast, same-nonce **speed-up/cancel** replacement.",
-            "Wrote and fuzz-tested an escrow contract with **Foundry** (incl. reentrancy attack test); all frontend writes are **simulation-gated** with decoded custom-error reasons.",
-          ],
-        },
-      ],
-    },
-    {
       heading: "Education",
       items: [
         {
           school: "Fo Guang University",
-          degree: "Master of Arts in Economics",
+          degree: "Master of Arts in Economics (5-year integrated BA/MA program)",
           period: "Sep 2011 – Jun 2012",
         },
       ],
